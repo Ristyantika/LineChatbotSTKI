@@ -47,9 +47,9 @@ handler = WebhookHandler(channel_secret)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
 # change this variable with your server API 
-api_url = "http://13.76.0.42"
-api_port = ":6598"
-api_route = "/"
+# api_url = "http://13.76.0.42"
+# api_port = ":6598"
+# api_route = "/"
 
 @app.route("/test", methods=['GET'])
 def test():
@@ -81,7 +81,7 @@ def handle_text_message(event):
     line_bot_api.reply_message(event.reply_token, TextSendMessage(text=answer))
 
 def request_api(question):
-    url = api_url + api_port + api_route
+    url = "http://13.76.0.42" + ":6598" + "/"
     payload = {"question": question}
 
     response_data = ""
