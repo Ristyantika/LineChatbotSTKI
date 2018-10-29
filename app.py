@@ -97,8 +97,7 @@ def request_api(question):
             time.sleep(1)
             continue
     
-    response_data = json.JSONDecoder().decode(response_data)
-    return response_data["answer"]
+    return response_data
 
 if __name__ == "__main__":
     arg_parser = ArgumentParser(
