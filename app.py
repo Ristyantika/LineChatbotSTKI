@@ -81,7 +81,7 @@ def handle_text_message(event):
     line_bot_api.reply_message(event.reply_token, TextSendMessage(text=answer))
 
 def request_api(question):
-    url = "http://13.76.0.42" + ":6598" + "/"
+    url = "http://13.76.0.42:6598"
     payload = {"question": question}
 
     response_data = ""
