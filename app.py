@@ -94,7 +94,7 @@ def request_api(question):
         except:
             print "Connection timeout..."
             print "Retrying post request..."
-            time.Sleep(1)
+            time.sleep(1)
             continue
     
     response_data = json.JSONDecoder().decode(response_data)
