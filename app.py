@@ -47,9 +47,9 @@ handler = WebhookHandler(channel_secret)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
 # change this variable with your server API 
-api_url = "http://35.229.124.57"
-api_port = ":5000"
-api_route = "/predict"
+api_url = "http://13.76.0.42"
+api_port = ":6598"
+api_route = "/"
 
 @app.route("/test", methods=['GET'])
 def test():
